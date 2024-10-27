@@ -1,0 +1,50 @@
+/* @import "../../vars.css"; */
+/* .carousel {
+    width: 50%;
+    height: 700px;
+    color: white;
+    background-color: rgb(29, 27, 27);
+    
+    
+}
+.carouselInner{
+   height: 100%; 
+   width: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+
+}
+
+.left{
+    
+    flex:5%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+
+}
+.centre{
+    flex:90%;
+    height: 100%;
+
+}
+.right{
+    flex: 5%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+} */
+
+/* .carousel{
+    display: flex;
+    height: 400px;
+    width:100%;
+    max-width: 800px;
+}
+
+.carousel_wrapper{
+    position: relative;
+    background-color: aliceblue;
+} */

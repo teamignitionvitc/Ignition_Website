@@ -1,0 +1,21 @@
+.title {
+    color: white; 
+    font-size: 35px; 
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    text-align: center; 
+    margin: 30px 0; 
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    padding: 0 30px; 
+    gap: 10px; 
+}
+
+.container {
+    padding: 30px; 
+}
+

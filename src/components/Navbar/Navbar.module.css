@@ -1,0 +1,100 @@
+@import "../../vars.css";
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 61px;
+    z-index: 2;
+    margin: 0 10%;
+
+    transition: box-shadow 0.5s ease; /* Smooth transition */
+}
+
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.menu {
+    display: flex;
+}
+
+.menuItems {
+    display: flex;
+    gap: 47px;
+    list-style: none;
+}
+
+.menuItems a {
+    font-size: 25px;
+    color: var(--color-text);
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* For underline effect */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth color transition */
+}
+
+.menuItems a:hover {
+    color: rgba(255, 255, 255, 0.8); /* Change color on hover */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glow effect on text */
+}
+
+.menuItems a::after {
+    content: ""; /* Create an underline effect */
+    display: block;
+    width: 100%; /* Full width */
+    height: 2px; /* Height of the underline */
+    background: rgba(255, 255, 255, 0.8); /* Underline color */
+    transform: scaleX(0); /* Start hidden */
+    transition: transform 0.3s ease; /* Smooth transition for underline */
+    position: absolute; /* Position it absolutely */
+    bottom: -5px; /* Position it below the text */
+    left: 0; /* Align to the left */
+}
+
+.menuItems a:hover::after {
+    transform: scaleX(1); /* Show underline on hover */
+}
+
+.menuBtn {
+    display: none;
+}
+
+@media screen and (max-width: 830px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu {
+        position: absolute;
+        right: 0;
+        margin-right: 10%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 3;
+    }
+    .menuBtn {
+        display: block;
+        cursor: pointer;
+    }
+    .menuItems {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        border-radius: 10px;
+        background: linear-gradient(0deg, rgba(25, 55, 109, 0.2) 0%, rgba(25, 55, 109, 1) 100%);
+        padding: 24px 33px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+        transition: all 0.5s ease; /* Smooth transition for menu */
+    }
+    .menuOpen {
+        display: flex;
+        z-index: 1;
+    }
+}
