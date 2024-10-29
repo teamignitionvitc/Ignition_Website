@@ -11,7 +11,7 @@ const sponsorsData = [
 const Sponsors = () => {
   return (
     <div className={styles.sponsorsContainer}>
-      <h2>Sponsors</h2>
+      <h2 className={styles.title}>Sponsors</h2>
       <div className={styles.sponsorsGrid}>
         {sponsorsData.map((sponsor) => (
           <Link href={sponsor.url} key={sponsor.id} passHref target="_blank" rel="noopener noreferrer">
