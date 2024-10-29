@@ -1,0 +1,42 @@
+.container {
+    background-color: rgba(51, 51, 51, 0.5); 
+    border: 2px solid transparent; 
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    height: 150px; 
+    position: relative; 
+    transition: all 0.4s ease;
+}
+
+.container.open {
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.5); 
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); 
+}
+
+.title {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.content {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    height: 0;
+    overflow: hidden;
+}
+
+.content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
