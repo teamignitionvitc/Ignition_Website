@@ -1,0 +1,33 @@
+/* @import "../../styles/vars.css"; */
+
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 49px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.title{
+    font-size:72px;
+    font-weight:900;
+    margin-bottom: 33px;
+    font-family: var(--font-roboto);
+    color: white;
+    /* background: linear-gradient(90deg,rgba(255,255,255,1)70%,rgba(255,255,255,0)120%);
+    -webkit-text-fill-color: transparent ;
+    -webkit-background-clip:text ; */
+}
+.topBlur{
+    position:absolute;
+    width:50vw;
+    height: 50vw;
+    min-width: 350px;
+    min-height: 350px;
+    top:-120px;
+    background:rgba(25,55,109,0.7) ;
+    filter: blur(100px);
+    z-index:0;
+}
